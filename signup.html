@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign Up Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="splash">
+        <div class="highlight">
+          <img src="odin-lined.png" alt="Odin logo" class="logo" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+
+      <div class="main">
+        <p class="blurb">
+          “The best thing for being sad," replied Merlin, beginning to puff and blow, "is to learn
+          something. That's the only thing that never fails. You may grow old and trembling in your
+          anatomies, you may lie awake at night listening to the disorder of your veins, you may
+          miss your only love, you may see the world about you devastated by evil lunatics, or know
+          your honour trampled in the sewers of baser minds. There is only one thing for it then —
+          to learn. Learn why the world wags and what wags it. That is the only thing which the mind
+          can never exhaust, never alienate, never be tortured by, never fear or distrust, and never
+          dream of regretting. Learning is the only thing for you. Look what a lot of things there
+          are to learn."
+          <br />
+          <br />
+          <strong>Sign up now.</strong>
+          <br />
+          <strong><em>Not a real service.</em></strong>
+        </p>
+
+        <form action="" method="post" id="signup">
+          <legend>Let's do this!</legend>
+
+          <div class="row">
+            <div>
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" name="first_name" placeholder="Thor" />
+            </div>
+            <div>
+              <label for="last_name">LAST NAME</label>
+              <input type="text" id="last_name" name="last_name" placeholder="Odinson" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="thor.odinson@bilskirnir.no"
+              />
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="password">PASSWORD</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="12"
+                maxlength="128"
+                required
+              />
+            </div>
+            <div>
+              <label for="confirm_password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                minlength="12"
+                maxlength="128"
+                required
+              />
+            </div>
+          </div>
+        </form>
+
+        <button type="submit" form="signup">Create Account</button>
+        <p class="already_have">Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </body>
+</html>
